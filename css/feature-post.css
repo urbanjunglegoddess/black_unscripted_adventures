@@ -1,0 +1,75 @@
+/*Featured Post*/
+.post-featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 65%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:  2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Date styling - on top of the section */
+.post-featured .date {
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Title Styling */
+.post-featured h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.post-featured h2 a {
+    color: #2f195f;
+    text-decoration: none;
+}
+
+.post-featured h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph styling - same size as date */
+.post-featured p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+
+.post-featured img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Action Button Styling */
+.post-featured .actions {
+    margin-top: 20px;
+}
+
+.post-featured .actions .button {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    color: #cc5803; /* Tawny outline */
+    background-color: transparent;
+    border: 2px solid #cc5803;
+    border-radius: 25px;  /* Curved edges */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.post-featured .actions .button:hover {
+    background-color: #cc5803;
+    color: white;
+}

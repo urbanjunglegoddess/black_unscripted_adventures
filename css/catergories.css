@@ -1,0 +1,36 @@
+/* Category Filter */
+.category-filter {
+    text-align: center;
+    padding: 20px;
+    background-color: #cc5803;
+    color: #fff;
+}
+
+.category-filter h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.category-list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.category-list li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #43701f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.category-list li a:hover {
+    background-color: #2f195f;
+}

@@ -1,0 +1,165 @@
+/* Header */
+header {
+}
+
+/* Hero Banner */
+.hero {
+    background-image: url('../assets/images/logo.png');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #43701f;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.site-header {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #43701f;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo-container {
+    flex: 0 1 auto;
+}
+
+.site-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb-nav {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.breadcrumb {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    margin: 0 5px;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #dddad2ff;  /* Fern Green */
+    font-weight: bold;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item::after {
+    content: ">";
+    margin-left: 10px;
+    color: #825965;  /* Rose Taupe */
+}
+
+.breadcrumb-item:last-child::after {
+    content: "";
+}
+
+.breadcrumb-item.active {
+    color: #cc912dff;  /* Rose Taupe */
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.breadcrumb-item.active a {
+    color: inherit;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    margin-left: 10px;
+   padding: 5px 10px;
+    background-color: #cc5803; /* Tawny button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-bar button:hover {
+    background-color: #cc912d; /* Harvest Gold on hover */
+}
+

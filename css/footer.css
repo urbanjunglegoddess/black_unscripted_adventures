@@ -1,0 +1,95 @@
+/* Footer Layout */
+footer {
+    background-color: #232c33;  /* Gunmetal */
+    padding: 10px 20px;
+    color: #dddad2;  /* Timberwolf */
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #43701f;  /* Fern Green */
+}
+
+.footer-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-grid h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #cc5803; /* Tawny */
+}
+
+/* Social Media Links */
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-media ul li {
+    display: inline-block;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: #dddad2;  /* Timberwolf */
+}
+
+.social-media ul li a:hover {
+    color: #cc912d;  /* Harvest Gold */
+}
+
+/* Subscribe Form */
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 5px;
+    border: 2px solid #43701f;  /* Fern Green */
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.subscribe-form button {
+    padding: 5px 10px;
+    background-color: #43701f;  /* Fern Green */
+    color: #dddad2;  /* Timberwolf */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #2f195f;  /* Russian Violet */
+}
+
+/* Navigation Links in Footer */
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #dddad2;  /* Timberwolf */
+}
+
+footer nav ul li a:hover {
+    color: #825965;  /* Rose Taupe */
+}

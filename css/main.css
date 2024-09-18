@@ -1,0 +1,204 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('author-info.css');
+@import url('responsive.css');
+@import url('blog-cards.css');
+@import url('carousel.css');
+@import url('feature-post.css');
+@import url('catergories.css');
+
+/* CSS HEX */
+/*--tawny:#cc5803ff;*/
+/*--buff: #d5996bff;*/
+/*--rose-taupe: #825965ff;*/
+/*--russian-violet: #2f195fff;*/
+/*--fern-green: #43701fff;*/
+/*--timberwolf: #dddad2ff;*/
+/*--gunmetal: #232c33ff;*/
+/*--harvest-gold: #cc912dff;*/
+
+/*!* CSS HSL *!*/
+/*--tawny: hsla(25, 97%, 41%, 1);*/
+/*--buff: hsla(26, 56%, 63%, 1);*/
+/*--rose-taupe: hsla(342, 19%, 43%, 1);*/
+/*--russian-violet: hsla(259, 58%, 24%, 1);*/
+/*--fern-green: hsla(93, 57%, 28%, 1);*/
+/*--timberwolf: hsla(44, 14%, 85%, 1);*/
+/*--gunmetal: hsla(206, 19%, 17%, 1);*/
+/*--harvest-gold: hsla(38, 64%, 49%, 1);*/
+
+/*--tawny: rgba(204, 88, 3, 1);*/
+/*--buff: rgba(213, 153, 107, 1);*/
+/*--rose-taupe: rgba(130, 89, 101, 1);*/
+/*--russian-violet: rgba(47, 25, 95, 1);*/
+/*--fern-green: rgba(67, 112, 31, 1);*/
+/*--timberwolf: rgba(221, 218, 210, 1);*/
+/*--gunmetal: rgba(35, 44, 51, 1);*/
+/*--harvest-gold: rgba(204, 145, 45, 1);*/
+
+body {
+    background-color: #dddad2ff;
+}
+
+div {
+    padding: 10px;
+}
+
+
+/* Elements */
+h1 {
+    font: small-caps 48px Georgia;
+}
+
+h2 {
+    font: oblique 38px Optima;
+}
+
+h3 {
+    font: 28px fantasy;
+}
+
+h4 {
+    font: 20px Arial;
+}
+
+h5 {
+    font: 18px "Times New Roman";
+}
+
+p {
+    font: 16px "Times New Roman";
+}
+
+a {
+    text-decoration: none;
+    color: rgba(47, 25, 95, 1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: #cc5803;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form #site-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input {
+    padding: 10px 16px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: solid 1px #ccc;
+}
+
+textarea {
+    padding: 10px 16px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: solid 1px #ccc;
+}
+
+
+.right-img {
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin: 0 10px 10px 0;
+}
+
+.left-img {
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text Content */
+
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.author img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #cc5803; /* Tawny */
+}
+
+.author-details h2 {
+    margin: 5px 0;
+    color: #2f195f; /* Russian Violet */
+    font-weight: bold;
+}
+
+.author_info {
+    font-size: 1rem;
+    color: #43701f; /* Fern Green */
+    margin: 3px 0;
+}
+
+.author_info#author_bio {
+    font-style: italic;
+    color: #825965; /* Rose Taupe */
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 10px;
+    border-left: 4px solid #cc5803; /* Tawny */
+}
+
+
