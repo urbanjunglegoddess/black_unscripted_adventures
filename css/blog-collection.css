@@ -2,13 +2,13 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    color: #2f195f;
-    background-color: #dddad2;
+    color: #2f195f;  /* Russian Violet */
+    background-color: #dddad2;  /* Timberwolf */
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #43701f;
+    background-color: #43701f;  /* Fern Green */
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -36,7 +36,7 @@ body {
 .page-title {
     text-align: center;
     padding: 40px;
-    background-color: #825965;
+    background-color: #825965;  /* Rose Taupe */
     color: #fff;
 }
 
@@ -51,13 +51,23 @@ body {
 }
 
 /* Category Filter */
+.category-filter {
+    text-align: center;
+    padding: 20px;
+    background-color: #cc5803; /* Tawny */
+    color: #fff;
+}
 
 .category-filter h2 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-
+.category-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
 
 .category-list li {
     display: inline;
@@ -67,14 +77,14 @@ body {
 .category-list li a {
     text-decoration: none;
     color: #fff;
-    background-color: #43701f;
+    background-color: #43701f;  /* Fern Green */
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .category-list li a:hover {
-    background-color: #2f195f;
+    background-color: #2f195f;  /* Russian Violet */
 }
 
 /* Blog Grid */
@@ -85,7 +95,12 @@ body {
     padding: 40px;
 }
 
-
+.post-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
 
 .post-card img {
     width: 100%;
@@ -94,6 +109,7 @@ body {
 
 .post-card h3 {
     margin: 15px 0;
+    padding: 0 15px;
 }
 
 .post-card p {
@@ -104,7 +120,7 @@ body {
     display: inline-block;
     margin-bottom: 15px;
     padding: 10px 20px;
-    background-color: #cc5803;
+    background-color: #cc5803;  /* Tawny */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -112,13 +128,59 @@ body {
 }
 
 .read-more:hover {
-    background-color: #825965;
+    background-color: #825965;  /* Rose Taupe */
 }
 
 /* Footer */
 footer {
-    background-color: #232c33;
+    background-color: #232c33;  /* Gunmetal */
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/* Media Queries */
+
+/* Medium devices (tablets, 768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);  /* Show 2 columns on medium screens */
+        padding: 30px;
+    }
+
+    .page-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (mobile phones, below 768px) */
+@media (max-width: 767px) {
+    .blog-grid {
+        grid-template-columns: 1fr;  /* Show 1 column on small screens */
+        padding: 20px;
+    }
+
+    .page-title h1 {
+        font-size: 2rem;
+    }
+
+    .page-title p {
+        font-size: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .category-list li {
+        margin: 5px 0;
+    }
 }

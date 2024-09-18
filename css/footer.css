@@ -1,4 +1,5 @@
 /* Footer Layout */
+/* Base Footer Styles */
 footer {
     background-color: #232c33;  /* Gunmetal */
     padding: 10px 20px;
@@ -92,4 +93,96 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     color: #825965;  /* Rose Taupe */
+}
+
+/* Responsive Styles */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    footer {
+        font-size: 1rem;
+        padding: 20px 40px;
+    }
+
+    .footer-grid h3 {
+        font-size: 1.5rem;
+    }
+
+    .social-media ul li a {
+        font-size: 1.2rem;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-grid h3 {
+        font-size: 1.3rem;
+    }
+
+    .social-media ul {
+        justify-content: center;
+        margin: 0 0 10px 0;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 250px;
+    }
+}
+
+/* Small devices (mobile phones, below 768px) */
+@media (max-width: 767px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .footer-grid h3 {
+        font-size: 1.1rem;
+    }
+
+    .social-media ul {
+        justify-content: center;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 200px;
+    }
+
+    footer nav ul {
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin-bottom: 10px;
+    }
 }

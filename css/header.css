@@ -1,6 +1,5 @@
 /* Header */
-header {
-}
+/* Base Styles */
 
 /* Hero Banner */
 .hero {
@@ -36,7 +35,6 @@ header {
     margin: 0;
 }
 
-
 /* Navigation Bar */
 .navbar {
     background-color: #43701f;
@@ -67,7 +65,7 @@ header {
     text-decoration: underline;
 }
 
-
+/* Site Header */
 .site-header {
     display: flex;
     align-items: center;
@@ -151,7 +149,7 @@ header {
 
 .search-bar button {
     margin-left: 10px;
-   padding: 5px 10px;
+    padding: 5px 10px;
     background-color: #cc5803; /* Tawny button */
     color: white;
     border: none;
@@ -163,3 +161,111 @@ header {
     background-color: #cc912d; /* Harvest Gold on hover */
 }
 
+/* Responsive Styles */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hero {
+        height: 800px;
+    }
+
+    .hero h2 {
+        font-size: 5rem;
+    }
+
+    .hero p {
+        font-size: 3rem;
+    }
+
+    .site-logo {
+        width: 120px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.5rem;
+    }
+
+    .breadcrumb-item a {
+        font-size: 1.2rem;
+    }
+
+    .search-bar input {
+        width: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+        height: 600px;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .site-logo {
+        width: 90px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .breadcrumb-item a {
+        font-size: 1rem;
+    }
+
+    .search-bar input {
+        width: 250px;
+    }
+}
+
+/* Small devices (mobile phones, below 768px) */
+@media (max-width: 767px) {
+    .hero {
+        height: 400px;
+        background-size: cover;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .site-logo {
+        width: 70px;
+    }
+
+    .breadcrumb {
+        display: block;
+        text-align: center;
+    }
+
+    .breadcrumb-item::after {
+        display: none;
+    }
+
+    .search-bar input {
+        width: 150px;
+    }
+}

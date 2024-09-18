@@ -1,13 +1,12 @@
-/*Carousel*/
+/* Base Styling */
 .carousel {
     height: fit-content;
     display: flex;
     padding: 20px;
-    background-color: #232c33;
+    background-color: #232c33;  /* Gunmetal */
     color: #fff;
-
+    overflow-x: auto;
 }
-
 
 .carousel-item {
     width: auto;
@@ -15,18 +14,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 20%;
+    flex: 0 0 20%; /* Initially 20% width for each item */
     margin-right: 20px;
-    background-color: #cc5803;
+    background-color: #cc5803; /* Tawny */
     padding: 20px;
     border-radius: 10px;
 }
 
 .carousel-item h2 {
     font-size: 18px;
-}
-
-.carousel-item h2 {
     margin: 0 0 10px;
 }
 
@@ -52,5 +48,64 @@
 }
 
 .read-more:hover {
-    background-color: #825965;
+    background-color: #825965; /* Rose Taupe */
+}
+
+/* Responsive Styles */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-item {
+        flex: 0 0 20%; /* Show more items per row */
+        padding: 30px;
+    }
+
+    .carousel-item h2 {
+        font-size: 20px;
+    }
+
+    .read-more {
+        padding: 12px 25px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .carousel {
+        padding: 15px;
+    }
+
+    .carousel-item {
+        flex: 0 0 30%; /* Show fewer items per row on medium screens */
+        padding: 20px;
+    }
+
+    .carousel-item h2 {
+        font-size: 18px;
+    }
+
+    .read-more {
+        padding: 10px 20px;
+    }
+}
+
+/* Small devices (mobile phones, below 768px) */
+@media (max-width: 767px) {
+    .carousel {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%; /* Full-width items on mobile */
+        margin-bottom: 20px;
+    }
+
+    .carousel-item h2 {
+        font-size: 16px;
+    }
+
+    .read-more {
+        padding: 8px 15px;
+    }
 }

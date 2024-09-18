@@ -1,8 +1,8 @@
-/* Category Filter */
+/* Base Styling */
 .category-filter {
     text-align: center;
     padding: 20px;
-    background-color: #cc5803;
+    background-color: #cc5803; /* Tawny */
     color: #fff;
 }
 
@@ -25,12 +25,72 @@
 .category-list li a {
     text-decoration: none;
     color: #fff;
-    background-color: #43701f;
+    background-color: #43701f; /* Fern Green */
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .category-list li a:hover {
-    background-color: #2f195f;
+    background-color: #2f195f; /* Russian Violet */
+}
+
+/* Responsive Styles */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .category-filter {
+        padding: 30px;
+    }
+
+    .category-filter h2 {
+        font-size: 2.5rem;
+    }
+
+    .category-list li a {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .category-filter {
+        padding: 20px;
+    }
+
+    .category-filter h2 {
+        font-size: 2rem;
+    }
+
+    .category-list li a {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (mobile phones, below 768px) */
+@media (max-width: 767px) {
+    .category-filter {
+        padding: 15px;
+    }
+
+    .category-filter h2 {
+        font-size: 1.8rem;
+    }
+
+    .category-list {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .category-list li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .category-list li a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
