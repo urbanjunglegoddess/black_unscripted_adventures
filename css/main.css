@@ -232,7 +232,24 @@ blockquote {
 
 /* Small devices (mobile phones, below 768px) */
 @media (max-width: 767px) {
-    h1 {
+    body {
+        overflow-x: hidden;
+    }
+
+    .post-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .post-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .post-card h3, .post-card p, .post-card a {
+        padding: 0 10px;
+    }
+ h1 {
         font-size: 32px;
     }
 
