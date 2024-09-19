@@ -94,11 +94,15 @@
     .carousel {
         padding: 10px;
         flex-wrap: wrap;
+         overflow-x: hidden;
+        white-space: normal;
     }
 
     .carousel-item {
         flex: 0 0 100%; /* Full-width items on mobile */
         margin-bottom: 20px;
+         display: block;
+        width: 100%;
     }
 
     .carousel-item h2 {
