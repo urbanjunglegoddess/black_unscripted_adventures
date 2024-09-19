@@ -102,7 +102,7 @@
         flex: 0 0 100%; /* Full-width items on mobile */
         margin-bottom: 20px;
          display: block;
-        width: 100%;
+        width: 90%;
     }
 
     .carousel-item h2 {
