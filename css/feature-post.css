@@ -1,5 +1,4 @@
-/*Featured Post*/
-./* Base Styling */
+/* Featured Post - Base Styling */
 .post-featured {
     display: flex;
     flex-direction: column;
@@ -61,10 +60,12 @@
 .post-featured .actions .button {
     padding: 10px 30px;
     font-size: 1.2rem;
-    color: #cc5803; /* Tawny outline */
+    color: #cc5803;
+    /* Tawny outline */
     background-color: transparent;
     border: 2px solid #cc5803;
-    border-radius: 25px;  /* Curved edges */
+    border-radius: 25px;
+    /* Curved edges */
     cursor: pointer;
     transition: all 0.3s ease;
 }
