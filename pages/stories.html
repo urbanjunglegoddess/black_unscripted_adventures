@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Collection | Black Unscripted Adventures</title>
+    <title>Stories | Black Unscripted Adventures</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<nav class="navbar">
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="stories.html">Stories</a></li>
-    </ul>
-</nav>
-
-<!-- Search Bar -->
-<div class="search-bar">
-    <form action="/search" method="get">
-        <input type="search" id="site-search" placeholder="Search..." name="site-search"
-               aria-label="Search through site content">
-        <button>Search</button>
-    </form>
-</div>
+<header class="site-header">
+    <div class="logo-container">
+        <a href="../index.html">
+            <img src="../assets/images/logo.png" alt="Black Unscripted Adventures logo" class="site-logo">
+        </a>
+    </div>
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Stories</li>
+        </ol>
+    </nav>
+    <div class="search-bar">
+        <form action="/search" method="get">
+            <input type="search" id="site-search" placeholder="Search stories..." name="site-search"
+                   aria-label="Search through site content">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>
 
 <!-- Header Section -->
 <header class="hero">
@@ -203,39 +206,33 @@
 </div>
 
 <footer>
-
     <div class="footer-grid">
-
         <h3>Black Unscripted Adventures</h3>
-
         <div class="social-media">
             <ul>
                 <li><a href="https://www.facebook.com">Facebook</a></li>
-                <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
             </ul>
         </div>
-
         <div class="subscribe-form">
-            <form class="subscribe-form" action="/subscribe" method="post">
+            <form action="/subscribe" method="post">
                 <label for="subscribe-email">Subscribe to our newsletter:</label>
                 <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Your email">
                 <button type="submit">Subscribe</button>
             </form>
         </div>
-        <!--<nav>-->
-        <!--    <ul>-->
-        <!--        <li><a href="index.html">Home</a></li>-->
-        <!--        <li><a href="pages/about.html">About</a></li>-->
-        <!--        <li><a href="pages/stories.html">Stories</a></li>-->
-        <!--        <li><a href="#../contact-form">Contact</a></li>-->
-        <!--    </ul>-->
-        <!--</nav>-->
-
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="../index.html#contact-form">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-
 </footer>
 
-
+<script src="../js/blog-site.js"></script>
 </body>
 </html>
